@@ -14,11 +14,11 @@ export async function verifyConditions(pluginConfig: SemanticReleaseConfig,
     throw new Error('Environment variable BITBUCKET_PASSWORD is not set.');
   }
   if (!(context.options.publish &&
-        context.options.publish.find((p) => p.path === '@iteratec/semantic-release-bitbucket'))) {
+        context.options.publish.find((p) => p.path === '@ryoung999/semantic-release-bitbucket'))) {
           throw new Error('\'publish\' key is not configured');
   }
   const bitbucketPlugnConfig = context.options.publish!
-    .find((p) => p.path === '@iteratec/semantic-release-bitbucket')! as BitbucketPublishConfig;
+    .find((p) => p.path === '@ryoung999/semantic-release-bitbucket')! as BitbucketPublishConfig;
   if (!bitbucketPlugnConfig.repositoryName) {
     throw new Error('\'repositoryName\' must be set in the publish config section.');
   }
@@ -27,7 +27,12 @@ export async function verifyConditions(pluginConfig: SemanticReleaseConfig,
     bitbucketPlugnConfig.bitbucketUrl.endsWith('/') ? bitbucketPlugnConfig.bitbucketUrl :
       `${bitbucketPlugnConfig.bitbucketUrl}/` : 'https://api.bitbucket.org/2.0/';
   const scope = bitbucketPlugnConfig.teamName ? bitbucketPlugnConfig.teamName : process.env.BITBUCKET_USER;
-  return fetch(`${bitbucketUrl}repositories/${scope}/${bitbucketPlugnConfig.repositoryName}`, {
+  if(bitbucketUrl.includes('https://api.bitbucket.org/2.0/')){
+    var repoUrl = `${bitbucketUrl}repositories/${owner}/${pluginConfig.repositoryName}`;
+  } else {
+    var repoUrl = `${bitbucketUrl}${owner}/repos/${pluginConfig.repositoryName}`;
+  }
+  return fetch(repoUrl, {
       headers: {Authorization: `Basic ${encodedCreds}`},
     })
     .then((response) => {

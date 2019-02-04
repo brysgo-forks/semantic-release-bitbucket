@@ -1,5 +1,5 @@
 {
-  "name": "@iteratec/semantic-release-bitbucket",
+  "name": "@ryoung999/semantic-release-bitbucket",
   "version": "1.0.0-semantically-released",
   "description": "a semantic-release plugin for bitbucket",
   "main": "index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iteratec/semantic-release-bitbucket.git"
+    "url": "git+https://github.com/ryoung999/semantic-release-bitbucket.git"
   },
   "keywords": [
     "semantic-release",
@@ -22,9 +22,9 @@
   "author": "Christoph Murczek <christoph.murczek@iteratec.at>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iteratec/semantic-release-bitbucket/issues"
+    "url": "https://github.com/ryoung999/semantic-release-bitbucket/issues"
   },
-  "homepage": "https://github.com/iteratec/semantic-release-bitbucket#readme",
+  "homepage": "https://github.com/ryoung999/semantic-release-bitbucket#readme",
   "publishConfig": {
     "access": "public"
   },
@@ -53,7 +53,7 @@
     "semantic-release": "^15.5.0",
     "ts-node": "^6.0.3",
     "tslint": "^5.10.0",
-    "typescript": "^2.8.3"
+    "typescript": "^2.9.2"
   },
   "config": {
     "commitizen": {
