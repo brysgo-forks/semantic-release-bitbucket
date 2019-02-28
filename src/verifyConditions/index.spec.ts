@@ -37,7 +37,7 @@ describe('semantic-release-bitbucket', function() {
           branch: '',
           noCi: true,
           publish: [{
-            path: '@iteratec/semantic-release-bitbucket',
+            path: '@brysgo/semantic-release-bitbucket',
             repositoryName: '',
           } as BitbucketPublishConfig & SemanticReleasePlugin],
           repositoryUrl: '',
@@ -58,7 +58,7 @@ describe('semantic-release-bitbucket', function() {
           branch: '',
           noCi: true,
           publish: [{
-            path: '@iteratec/semantic-release-bitbucket',
+            path: '@brysgo/semantic-release-bitbucket',
             repositoryName: '',
           } as BitbucketPublishConfig & SemanticReleasePlugin],
           repositoryUrl: '',
@@ -80,7 +80,7 @@ describe('semantic-release-bitbucket', function() {
           branch: '',
           noCi: true,
           publish: [{
-            path: '@iteratec/semantic-release-bitbucket',
+            path: '@brysgo/semantic-release-bitbucket',
             repositoryName: '',
           } as BitbucketPublishConfig & SemanticReleasePlugin],
           repositoryUrl: '',
@@ -105,7 +105,7 @@ describe('semantic-release-bitbucket', function() {
           branch: '',
           noCi: true,
           publish: [{
-            path: '@iteratec/semantic-release-bitbucket',
+            path: '@brysgo/semantic-release-bitbucket',
             repositoryName: 'test',
           } as BitbucketPublishConfig & SemanticReleasePlugin],
           repositoryUrl: '',

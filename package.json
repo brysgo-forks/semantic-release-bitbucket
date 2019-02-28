@@ -1,6 +1,6 @@
 {
   "name": "@brysgo/semantic-release-bitbucket",
-  "version": "1.0.0-semantically-released",
+  "version": "0.0.0-semantically-released",
   "description": "a semantic-release plugin for bitbucket",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "semver",
     "bitbucket"
   ],
-  "author": "Christoph Murczek <christoph.murczek@iteratec.at>",
+  "author": "Christoph Murczek <christoph.murczek@brysgo.at>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/brysgo-forks/semantic-release-bitbucket/issues"
