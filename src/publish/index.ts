@@ -8,7 +8,7 @@ import { BitbucketPublishConfig } from '../bitbucketPlugnConfig';
 export async function publish(pluginConfig: SemanticReleaseConfig, context: SemanticReleaseContext) {
   const encodedCreds = btoa(`${process.env.BITBUCKET_USER}:${process.env.BITBUCKET_PASSWORD}`);
   const publishConfig = context.options.publish!
-    .find((p) => p.path === '@ryoung999iteratec/semantic-release-bitbucket')! as BitbucketPublishConfig;
+    .find((p) => p.path === '@brysgo/semantic-release-bitbucket')! as BitbucketPublishConfig;
   const bitbucketUrl = publishConfig.bitbucketUrl ?
     publishConfig.bitbucketUrl.endsWith('/') ? publishConfig.bitbucketUrl :
     `${publishConfig.bitbucketUrl}/` : 'https://api.bitbucket.org/2.0/';

@@ -1,5 +1,5 @@
 {
-  "name": "@ryoung999/semantic-release-bitbucket",
+  "name": "@brysgo/semantic-release-bitbucket",
   "version": "1.0.0-semantically-released",
   "description": "a semantic-release plugin for bitbucket",
   "main": "index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ryoung999/semantic-release-bitbucket.git"
+    "url": "git+https://github.com/brysgo-forks/semantic-release-bitbucket.git"
   },
   "keywords": [
     "semantic-release",
@@ -22,9 +22,9 @@
   "author": "Christoph Murczek <christoph.murczek@iteratec.at>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ryoung999/semantic-release-bitbucket/issues"
+    "url": "https://github.com/brysgo-forks/semantic-release-bitbucket/issues"
   },
-  "homepage": "https://github.com/ryoung999/semantic-release-bitbucket#readme",
+  "homepage": "https://github.com/brysgo-forks/semantic-release-bitbucket#readme",
   "publishConfig": {
     "access": "public"
   },

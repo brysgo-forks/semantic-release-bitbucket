@@ -14,11 +14,11 @@ export async function verifyConditions(pluginConfig: SemanticReleaseConfig,
     throw new Error('Environment variable BITBUCKET_PASSWORD is not set.');
   }
   if (!(context.options.publish &&
-        context.options.publish.find((p) => p.path === '@ryoung999/semantic-release-bitbucket'))) {
+        context.options.publish.find((p) => p.path === '@brysgo/semantic-release-bitbucket'))) {
           throw new Error('\'publish\' key is not configured');
   }
   const bitbucketPlugnConfig = context.options.publish!
-    .find((p) => p.path === '@ryoung999/semantic-release-bitbucket')! as BitbucketPublishConfig;
+    .find((p) => p.path === '@brysgo/semantic-release-bitbucket')! as BitbucketPublishConfig;
   if (!bitbucketPlugnConfig.repositoryName) {
     throw new Error('\'repositoryName\' must be set in the publish config section.');
   }
